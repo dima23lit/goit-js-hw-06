@@ -10,16 +10,16 @@ class StringBuilder {
     }
 
     padStart(str) {
-        this.#value = this.#value.padStart(this.#value.length + 1, str)
+        this.#value = this.#value.padStart(this.#value.length + str.length, str)
     }
 
     padEnd(str) {
-        this.#value = this.#value.padEnd(this.#value.length + 1, str)
+        this.#value = this.#value.padEnd(this.#value.length + str.length, str)
     }
 
     padBoth(str) {
-        this.#value = this.#value.padEnd(this.#value.length + 1, str)
-        this.#value = this.#value.padStart(this.#value.length + 1, str)
+        this.#value = this.#value.padEnd(this.#value.length + str.length, str)
+        this.#value = this.#value.padStart(this.#value.length + str.length, str)
     }
 }
 
